@@ -39,4 +39,8 @@
 		transition: transform 0.3s;
 		z-index: -1;
 	}
+	&:hover::before {
+		transform: scaleX(1);
+		transform-origin: left;
+	}
 }
