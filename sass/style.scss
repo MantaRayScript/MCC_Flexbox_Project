@@ -50,7 +50,7 @@ body {
 	&__bars,
 	&__bars::after,
 	&__bars::before {
-		@include burgerBtn;
+		@include mixins.burgerBtn;
 	}
 	&__bars {
 		width: 100%;

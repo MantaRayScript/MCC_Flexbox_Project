@@ -1,3 +1,5 @@
+@use "./colors" as colors;
+
 @mixin burgerBtn {
 	position: absolute;
 	right: 0;
