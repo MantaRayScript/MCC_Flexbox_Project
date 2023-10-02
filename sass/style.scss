@@ -184,7 +184,7 @@ body {
 .hero-img {
 	position: relative;
 	padding: 10em 2em;
-	@include mixins.heroImages('../img/polynesia-mobile.jpg');
+	@include mixins.heroImages("../img/polynesia-mobile.jpg");
 	text-align: center;
 	color: colors.$pure-white;
 	overflow: hidden;
@@ -208,23 +208,36 @@ body {
 		color: colors.$pure-white;
 		text-align: center;
 		perspective: 1000px;
+		&:hover {
+			.islands__card-img {
+				transform: rotateY(-180deg);
+				opacity: 0;
+			}
+			.islands__card-info {
+				transform: rotateY(0deg);
+				opacity: 1;
+			}
+		}
 		&-img {
 			padding: 2em;
 			height: 100%;
 			border-radius: 8px;
 			background-size: cover;
+			transition: transform 1s, opacity 1s;
 			&--first {
-				background-image: colors.$light-blue-gradient, url('../img/island-one.jpg');
+				background-image: colors.$light-blue-gradient,
+					url("../img/island-one.jpg");
 			}
 			&--second {
-				background-image: colors.$blue-gradient, url('../img/island-two.jpg');
+				background-image: colors.$blue-gradient, url("../img/island-two.jpg");
 			}
 			&--third {
-				background-image: colors.$purple-gradient, url('../img/island-three.jpg');
+				background-image: colors.$purple-gradient,
+					url("../img/island-three.jpg");
 			}
+			
 		}
 	}
-
 }
 
 // ============================
@@ -324,7 +337,7 @@ body {
 	}
 	.hero-img {
 		padding: 40em 2em;
-		background-image: colors.$blue-gradient, url('../img/polynesia-desktop.jpg');
+		background-image: colors.$blue-gradient, url("../img/polynesia-desktop.jpg");
 		&__title {
 			font-size: 7.2rem;
 		}
