@@ -198,6 +198,35 @@ body {
 	}
 }
 
+// ISLANDS
+
+.islands {
+	&__card {
+		position: relative;
+		margin: 1em 0;
+		height: 450px;
+		color: colors.$pure-white;
+		text-align: center;
+		perspective: 1000px;
+		&-img {
+			padding: 2em;
+			height: 100%;
+			border-radius: 8px;
+			background-size: cover;
+			&--first {
+				background-image: colors.$light-blue-gradient, url('../img/island-one.jpg');
+			}
+			&--second {
+				background-image: colors.$blue-gradient, url('../img/island-two.jpg');
+			}
+			&--third {
+				background-image: colors.$purple-gradient, url('../img/island-three.jpg');
+			}
+		}
+	}
+
+}
+
 // ============================
 // MEDIA
 // ============================
