@@ -29,5 +29,23 @@ const handleCurrentYear = () => {
 	footerYear.innerText = year;
 };
 
+const handleObserver = () => {
+	const currentSection = window.scrollY;
+	allSections.forEach((section) => {
+		if (
+			section.classList.contains("white-section") &&
+			section.offsetTop <= currentSection + 60
+		) {
+			navBtnBars.classList.add("black-bars-color");
+		} else if (
+			!section.classList.contains("white-section") &&
+			section.offsetTop <= currentSection + 60
+		) {
+			navBtnBars.classList.remove("black-bars-color");
+		}
+	});
+};
+
 handleCurrentYear();
 navBtn.addEventListener("click", handleNav);
+window.addEventListener("scroll", handleObserver);
