@@ -1,5 +1,3 @@
-in progress...
-
 # COURSE PROJECT USING FLEXBOX
 
 ## ABOUT THE PROJECT
@@ -16,6 +14,15 @@ This project was made with MCC School Course part III, where we used the knowled
 |Methology | BEM (Block Element Modifier), Flexbox |
 
 ## ROADMAP
+
+ * [x] Creating a file structure
+ * [x] Creating a repository for github (with main branch)
+ * [x] Creating the HTML structure
+ * [x] Adding fonts, awesome icons source, images
+ * [x] Adding BEM classes
+ * [x] Adding styles in SASS and compiling to CSS (Flexbox)
+ * [x] Adding Javascript scripts
+ * [ ] Fixing the problem with offer section
 
 ## ACKNOWLEDGEMENTS
 
